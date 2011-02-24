@@ -27,7 +27,7 @@ class String
       'x' => 'derpherpherpderp',
       'y' => 'derpherpderpderp',
       'z' => 'derpderpherpherp',
-      '' => ''
+      ' ' => '.'
     }
     out = ""
     self.split(//).reverse.each do |c|

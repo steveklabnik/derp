@@ -20,4 +20,12 @@ class TestDerp < MiniTest::Unit::TestCase
     assert_equal "a".to_derp, "herpderp"
   end
 
+  def test_multiple_words
+    assert_equal "a a".to_derp, "herpderp . herpderp"
+  end
+
+  def test_long_words
+    assert_equal "aa".to_derp, "herpderp herpderp"
+  end
+
 end
