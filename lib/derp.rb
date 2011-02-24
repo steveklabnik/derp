@@ -1,3 +1,2 @@
 module Derp
-  # Your code goes here...
 end
