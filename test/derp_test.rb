@@ -16,4 +16,8 @@ class TestDerp < MiniTest::Unit::TestCase
     assert_instance_of String, @derp.to_derp
   end
 
+  def test_herps_and_derps
+    assert_equal "a".to_derp, "herpderp"
+  end
+
 end
