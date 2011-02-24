@@ -1,14 +1,19 @@
 require 'minitest/autorun'
 
+puts "LET'S GET READY TO DEEEEEEEEEERRRRRRRRRRRRRRRRP!!!!!!!!!!1"
+require 'derp'
+
 class TestDerp < MiniTest::Unit::TestCase
   def setup
-    puts "LET'S GET READY TO DEEEEEEEEEERRRRRRRRRRRRRRRRP!!!!!!!!!!1"
-    require 'derp'
+    @derp = "derp!"
   end
 
-  def test_derp_exists
-    derp = "derp!"
-    assert_respond_to derp, :to_derp
+  def test_to_derp_exists
+    assert_respond_to @derp, :to_derp
+  end
+
+  def test_to_derp_returns_string
+    assert_instance_of String, @derp.to_derp
   end
 
 end
