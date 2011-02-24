@@ -3,6 +3,7 @@ require 'minitest/autorun'
 class TestDerp < MiniTest::Unit::TestCase
   def setup
     puts "LET'S GET READY TO DEEEEEEEEEERRRRRRRRRRRRRRRRP!!!!!!!!!!1"
+    require 'derp'
   end
 
   def test_derp_exists
