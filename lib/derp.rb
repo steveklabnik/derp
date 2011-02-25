@@ -30,7 +30,7 @@ class String
       ' ' => '.'
     }
     out = ""
-    self.split(//).reverse.each do |c|
+    self.split(//).each do |c|
       out += morse[c] + " " unless morse[c].nil?
     end
     out.rstrip

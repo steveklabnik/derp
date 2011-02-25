@@ -28,4 +28,8 @@ class TestDerp < MiniTest::Unit::TestCase
     assert_equal "aa".to_derp, "herpderp herpderp"
   end
 
+  def test_different_characters
+    assert_equal "ab".to_derp, "herpderp derpherpherpherp"
+  end
+
 end
