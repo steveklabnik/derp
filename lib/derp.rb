@@ -31,7 +31,7 @@ class String
 
   def to_derp
     out = ""
-    self.split(//).each do |c|
+    self.downcase.split(//).each do |c|
       out += Morse[c] + " " unless Morse[c].nil?
     end
     out.rstrip

@@ -51,4 +51,8 @@ class TestDerp < MiniTest::Unit::TestCase
   def test_from_different_characters
     assert_equal "herpderp derpherpherpherp".from_derp, "ab"
   end
+
+  def test_to_capital_letters
+    assert_equal "AA".to_derp, "herpderp herpderp"
+  end
 end
