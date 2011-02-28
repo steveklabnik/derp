@@ -17,19 +17,19 @@ class TestDerp < MiniTest::Unit::TestCase
   end
 
   def test_herps_and_derps
-    assert_equal "a".to_derp, "herpderp"
+    assert_equal "herpderp", "a".to_derp
   end
 
   def test_multiple_words
-    assert_equal "a a".to_derp, "herpderp . herpderp"
+    assert_equal "herpderp . herpderp", "a a".to_derp
   end
 
   def test_long_words
-    assert_equal "aa".to_derp, "herpderp herpderp"
+    assert_equal "herpderp herpderp", "aa".to_derp
   end
 
   def test_different_characters
-    assert_equal "ab".to_derp, "herpderp derpherpherpherp"
+    assert_equal "herpderp derpherpherpherp", "ab".to_derp
   end
 
   def test_from_derp_exists
@@ -41,18 +41,18 @@ class TestDerp < MiniTest::Unit::TestCase
   end
 
   def test_from_multiple_words
-    assert_equal "herpderp . herpderp".from_derp, "a a"
+    assert_equal "a a", "herpderp . herpderp".from_derp
   end
 
   def test_from_long_words
-    assert_equal "herpderp herpderp".from_derp, "aa"
+    assert_equal "aa", "herpderp herpderp".from_derp
   end
 
   def test_from_different_characters
-    assert_equal "herpderp derpherpherpherp".from_derp, "ab"
+    assert_equal "ab", "herpderp derpherpherpherp".from_derp
   end
 
   def test_to_capital_letters
-    assert_equal "AA".to_derp, "herpderp herpderp"
+    assert_equal "herpderp herpderp", "AA".to_derp
   end
 end
