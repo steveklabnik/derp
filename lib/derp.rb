@@ -3,7 +3,7 @@ class String
     'a' => 'herpderp',
     'b' => 'derpherpherpherp',
     'c' => 'derpherpderpherp',
-    'd' =>'derpherpherp',
+    'd' => 'derpherpherp',
     'e' => 'herp',
     'f' => 'herpherpderpherp',
     'g' => 'derpderpherp',
