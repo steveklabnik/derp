@@ -1,0 +1,17 @@
+
+
+            ____  U _____ u   ____     ____    
+           |  _"\ \| ___"|/U |  _"\ uU|  _"\ u 
+          /| | | | |  _|"   \| |_) |/\| |_) |/ 
+          U| |_| |\| |___    |  _ <   |  __/   
+           |____/ u|_____|   |_| \_\  |_|      
+            |||_   <<   >>   //   \\_ ||>>_    
+           (__)_) (__) (__) (__)  (__)__)__)   
+
+      Derp is a Ruby gem that derp-ifys your Strings.
+
+          <http://github.com/steveklabnik/derp>
+
+      Just 'gem install derp'. Then you can 
+    "Hello World".to_derp to your heart's content.
+
