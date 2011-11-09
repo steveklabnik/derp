@@ -7,6 +7,7 @@ require 'rake/clean'
 
 task :default => :test
 
+require 'require_relative'
 task :test do
   Dir["test/**_test.rb"].each{|r| require_relative r }
 end

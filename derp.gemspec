@@ -16,6 +16,9 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rocco"
   s.add_development_dependency "rake"
 
+  s.add_dependency "require_relative" if RUBY_VERSION =~ /1\.8/
+  s.add_dependency "minitest" if RUBY_ENGINE =~ /jruby/
+
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
