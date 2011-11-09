@@ -1,6 +1,8 @@
 require 'bundler'
 Bundler::GemHelper.install_tasks
 
+include Rake::DSL
+
 require 'rake/clean'
 
 task :default => :test
