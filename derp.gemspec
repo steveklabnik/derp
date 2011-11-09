@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.description = %q{This gem gives you String#to_derp, which converts your string to morse code, and then encodes dots and dashes via herps and derps.}
 
   s.add_development_dependency "watchr"
+  s.add_development_dependency "rocco"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
