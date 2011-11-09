@@ -47,22 +47,17 @@ class String
   # with a BenString, the derp string is simply a `String` with only
   # 'herp' and 'derp' in it.
   def to_derp
-    out = ""
-    self.downcase.split(//).each do |c|
-      out += Morse[c] + " " unless Morse[c].nil?
-    end
-    out.rstrip
+    self.downcase.split(//).collect do |c|
+      Morse[c] + " " unless Morse[c].nil?
+    end.join.rstrip
   end
 
   # The inverse of `to_derp`, `from_derp` turns a derp string back into a
   # normal `String`.
   def from_derp
     inverted = Morse.invert
-    out = ""
-    self.split.each do |w|
-      out += inverted[w] + " " unless inverted[w].nil?
-    end
-    out.gsub!(/\s([a-z\s])/, '\1')
-    out.rstrip
+    self.split.collect do |w|
+      inverted[w] + " " unless inverted[w].nil?
+    end.join.gsub(/\s([a-z\s])/, '\1').rstrip
   end
 end
