@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Steve Klabnik"]
   s.email       = ["steve@steveklabnik.com"]
-  s.homepage    = "http://github.com/steveklabnik/derp"
+  s.homepage    = "http://steveklabnik.github.com/derp"
   s.summary     = %q{This gem gives you String#to_derp.}
   s.description = %q{This gem gives you String#to_derp, which converts your string to morse code, and then encodes dots and dashes via herps and derps.}
 
