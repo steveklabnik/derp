@@ -55,4 +55,8 @@ class TestDerp < MiniTest::Unit::TestCase
   def test_to_capital_letters
     assert_equal "herpderp herpderp", "AA".to_derp
   end
+
+  def test_numbers
+    assert_equal "1234567890".to_derp, "herpherpderpderp herpderpherpderp derpderpderpderp derpherpherpherpderp derpderpderpderpderp derpherpherpherpherp herpderpderpderpderp herpherpherpherpherp derpherpherpderpderp herpherpderpderpherp"
+  end
 end

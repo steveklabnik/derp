@@ -40,7 +40,17 @@ class String
     'x' => 'derpherpherpderp',
     'y' => 'derpherpderpderp',
     'z' => 'derpderpherpherp',
-    ' ' => '.'
+    ' ' => '.',
+    '1' => 'herpherpderpderp',
+    '2' => 'herpderpherpderp',
+    '3' => 'derpderpderpderp',
+    '4' => 'derpherpherpherpderp',
+    '5' => 'derpderpderpderpderp',
+    '6' => 'derpherpherpherpherp',
+    '7' => 'herpderpderpderpderp',
+    '8' => 'herpherpherpherpherp',
+    '9' => 'derpherpherpderpderp',
+    '0' => 'herpherpderpderpherp'
   }
 
   # This method converts a string to a derp string. Not to be confused
