@@ -9,15 +9,10 @@ Gem::Specification.new do |s|
   s.authors     = ["Steve Klabnik"]
   s.email       = ["steve@steveklabnik.com"]
   s.homepage    = "http://steveklabnik.github.com/derp"
-  s.summary     = %q{This gem gives you String#to_derp.}
-  s.description = %q{This gem gives you String#to_derp, which converts your string to morse code, and then encodes dots and dashes via herps and derps.}
+  s.summary     = %q{This gem retired, due to concerns about ableism.}
+  s.description = %q{This gem retired, due to conerns about ableism. http://en.wikipedia.org/wiki/Ableism}
 
-  s.add_development_dependency "watchr"
-  s.add_development_dependency "rocco"
   s.add_development_dependency "rake"
-
-  s.add_dependency "require_relative"
-  s.add_dependency "minitest" if RUBY_VERSION =~ /1\.8/
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
